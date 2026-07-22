@@ -1,0 +1,13 @@
+.card-part{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: start;
+}
+
+.card-negado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}

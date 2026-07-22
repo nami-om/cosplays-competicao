@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Competição</title>
+</head>
+<body>
+    <h1>CRUD</h1>
+    <div id="form">
+            <div class="container-inputs">
+                <label for="">Nome do participante</label>
+                <input id="input-nome_part" type="text">
+            </div>
+            <div class="container-inputs">
+                <label for="">Nome do personagem</label>
+                <input id="input-nome_perso" type="text">
+            </div>
+            <div class="container-inputs">
+                <label for="">Mídia</label>
+                <input id="input-midia" type="text">
+            </div>
+            <div class="container-inputs">
+                <label for="">Prop</label>
+                <input id="input-prop" type="text">
+            </div>
+            <div class="container-inputs">
+                <label for="">Modalidade desejada</label>
+                <input id="input-modalidade" type="text">
+            </div>
+            <div class="container-inputs">
+                <label for="">Personagem Canon</label>
+                <input id="input-canon" type="checkbox">
+            </div>
+
+             <h1></h1>
+            <button onclick="cadastrarPart()">Realizar cadastro</button>
+    </div>
+
+        <hr>
+        <hr>
+        <button onclick="mostrarPart()">Mostrar Todos os Participantes</button>
+        <hr><hr>
+
+        <div id="painel-participantes">
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

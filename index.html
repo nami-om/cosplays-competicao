@@ -9,11 +9,11 @@
 <body>
 
     <section id="telaInicial" class="tela ativa">
-    <h1>Bem Vindo ao Festival Hasune</h1>
-    <h2>É cosplayer e quer ter a oportunidade de subir no palco e competir em um evento muito procurado? <br> Meus parabéns agora você tem essa chance!</h2>
-    <h2>Nós do Festival Hasune, somos uma equipe atenciosa que prezamos pelos artistas, qualidade e principalmente o respeito</h2>
-    <h3>"E as premiações?" <br> RELAXA! NÓS TEMOS! (e das gordas) <br>Primeiro Lugar: R$ 5.000<br>Segundo Lugar: R$ 3.500<br>Terceiro Lugar: R$ 2.800<br>Bônus Não-Canon: R$ 1.200</h3>
-    <button onclick="realizarInscri()">Realizar Inscrição</button>
+        <h1>Bem Vindo ao Festival Hasune</h1>
+        <h2>É cosplayer e quer ter a oportunidade de subir no palco e competir em um evento muito procurado? <br> Meus parabéns agora você tem essa chance!</h2>
+        <h2>Nós do Festival Hasune, somos uma equipe atenciosa que prezamos pelos artistas, qualidade e principalmente o respeito!</h2>
+        <h3>"E as premiações?" <br> RELAXA! NÓS TEMOS! (e das gordas) <br>Primeiro Lugar: R$ 5.000<br>Segundo Lugar: R$ 3.500<br>Terceiro Lugar: R$ 2.800</h3>
+        <button onclick="realizarInscri()">Realizar Inscrição</button>
     </section>
     
     <section id="telaInscri" class="tela">
@@ -37,7 +37,11 @@
             </div>
             <div class="container-inputs">
                 <label for="">Modalidade desejada</label>
-                <input id="input-modalidade" type="text">
+                <select name="Escolher Modalidade" id="input-modalidade">
+                    <option value="Escolha">Escolha</option>
+                    <option value="Desfile">Desfile</option>
+                    <option value="Interpretativo">Interpretativo</option>
+                </select>
             </div>
             <div class="container-inputs">
                 <label for="">Personagem Canon</label>
@@ -45,27 +49,22 @@
             </div>
             
             <h1></h1>
-            <button onclick="cadastrarPart()">Finalizar Inscrição</button>
+            <button onclick="finalizarInscri()">Finalizar Inscrição</button>
+            <button onclick="mostrarPart()">Lista de Participantes</button>
+            
         </div>
         
         <hr>
         <hr>
-        <button onclick="mostrarPart()">Mostrar Todos os Participantes</button>
-        <hr><hr>
-        
+    </section>
+    
+    
+    <section id="telaTotal" class="tela">
+        <h1>Listas de Participantes Aceitos e Negados</h1>
+        <button onclick="partTotais()">Mostrar Todos os Participantes</button>
         <div id="painel-participantes">
         </div>
     </section>
-
-        
-    <section id="telaTotal" class="tela">
-        
-
-
-
-
-    </section>
-
 
 
 

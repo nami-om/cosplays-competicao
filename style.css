@@ -5,15 +5,22 @@
     display: block;
 }
 .card-part{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin: 10px;
 }
 
 .card-negado{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
     align-items: end;
+    margin: 10px;
+}
+
+#painel-participantes{
+    display: flex;
+    margin: 10px;
 }

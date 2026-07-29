@@ -11,15 +11,13 @@ function realizarInscri(){
     mudarTela()
     document.getElementById("telaInscri").classList.add("ativa")
 }
-
 function mostrarPart(){
     mudarTela()
     document.getElementById("telaTotal").classList.add("ativa")
 }
 
 
-
-function cadastrarPart(){
+function finalizarInscri(){
     const novoPart = {
         id: Date.now(), //conta os milisegundos desde 1980 (vai ser necessário mais pra frente)
         nome_part: document.getElementById('input-nome_part').value,
@@ -29,7 +27,7 @@ function cadastrarPart(){
         modalidade: document.getElementById('input-modalidade').value,
         canon: document.getElementById('input-canon').checked,
     }
-    if (novoPart.canon == 'true') {
+    if (novoPart.canon == true) {
         participantes.push(novoPart)
     }else{
         participantesNegados.push(novoPart)
@@ -39,10 +37,6 @@ function cadastrarPart(){
 
     limparFormulario()
 }
-
-// function salvarDados(){
-//     participantes = JSON.parse
-// }
 
 
 function limparFormulario(){
@@ -54,12 +48,13 @@ function limparFormulario(){
     document.getElementById('input-nome_part').focus()
 }
 
-//mostrar participantes
+
+
 //mostrar participantes aceitos
 //mostrar participantes negados - não canons
 //como separar os aceitos dos negados?
 
-function mostrarPart(){
+function partTotais(){
     document.getElementById('painel-participantes').innerHTML = ''
 
     for(let i = 0; i < participantes.length; i++){
@@ -88,3 +83,33 @@ function mostrarPart(){
     }
 }
 
+ document.getElementById('input-nome_part').addEventListener('keyup', function(e){
+    console.log(e.key)
+    if (e.key == "Enter") {
+        document.getElementById('input-nome_perso').focus()
+    }
+ })
+ document.getElementById('input-nome_perso').addEventListener('keyup', function(e){
+    console.log(e.key)
+    if (e.key == "Enter") {
+        document.getElementById('input-midia').focus()
+    }
+ })
+  document.getElementById('input-midia').addEventListener('keyup', function(e){
+    console.log(e.key)
+    if (e.key == "Enter") {
+        document.getElementById('input-prop').focus()
+    }
+ })
+  document.getElementById('input-prop').addEventListener('keyup', function(e){
+    console.log(e.key)
+    if (e.key == "Enter") {
+        document.getElementById('input-modalidade').focus()
+    }
+ })
+  document.getElementById('input-modalidade').addEventListener('keyup', function(e){
+    console.log(e.key)
+    if (e.key == "Enter") {
+        document.getElementById('input-nome_part').focus()
+    }
+ })

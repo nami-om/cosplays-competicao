@@ -1,26 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --fundo: #0C7B93;
+    --card: #27496D;
+    --button: #142850;
+    --texto: #00A8CC;
+}
+
+
 .tela {
-    display: none;
+    display: none !important;
 }
-.ativa{
-    display: block;
+
+.ativa {
+    display: block !important;
 }
-.card-part{
+
+
+body {
+    background-color: var(--fundo);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    background-color: var(--card);
+    color: aliceblue;
+    font-size: 15px;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+header img {
+    width: 5%;
+}
+
+
+button:hover {
+    scale: 1.05;
+    opacity: 0.5;
+}
+
+.layoutBotao {
+    border: none;
+    background: none;
+}
+
+.layoutBotao img {
+    width: 150px;
+}
+
+#botaoConfig {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+    padding: 30px;
+    gap: 20px;
+
+    background-color: var(--card);
+    border-radius: 20px;
+    box-shadow: 0 0 12px #29f8e7;
+
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--texto);
+}
+
+.container-inputs input,
+.container-inputs select {
+    padding: 5px;
+
+    background-color: var(--button);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    color: var(--texto);
+}
+
+
+.container-button,
+.card-part,
+.card-negado,
+.bg,
+#telaInicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-button {
+    color: var(--texto);
+}
+
+.container-button p,
+#container-inscri p {
+    padding: 3px;
+
+    border-style: solid;
+    border-radius: 10px;
+
+    color: var(--texto);
+}
+
+.card-part,
+.card-negado {
+    text-align: center;
+}
+
+.bg {
+    padding: 20px;
+
+    background-color: var(--button);
+    border-radius: 20px;
+    box-shadow: 0 0 12px #29f8e7;
+}
+
+
+#painel-participantes {
+    display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
+
     margin: 10px;
 }
 
-.card-negado{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    margin: 10px;
+#container-final {
+    margin-top: 40px;
+    gap: 20px;
 }
 
-#painel-participantes{
-    display: flex;
-    margin: 10px;
+
+#telaInicial {
+    text-align: center;
+}
+
+#paragrafoInicial {
+    width: 45%;
+    margin-top: 60px;
+}
+
+
+#container-inscri p {
+    margin-top: 20px;
 }

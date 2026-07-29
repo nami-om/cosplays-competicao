@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Mochiy+Pop+One&display=swap"
+        rel="stylesheet">
     <title>Festival Hasune</title>
 </head>
+
 <body>
 
+    <header>
+        <img src="logo.png" alt="">
+        <h1>˜°•✿•°˜ Festival Hasune ˜°•✿•°˜</h1>
+    </header>
+
     <section id="telaInicial" class="tela ativa">
-        <h1>Bem Vindo ao Festival Hasune</h1>
-        <h2>É cosplayer e quer ter a oportunidade de subir no palco e competir em um evento muito procurado? <br> Meus parabéns agora você tem essa chance!</h2>
-        <h2>Nós do Festival Hasune, somos uma equipe atenciosa que prezamos pelos artistas, qualidade e principalmente o respeito!</h2>
-        <h3>"E as premiações?" <br> RELAXA! NÓS TEMOS! (e das gordas) <br>Primeiro Lugar: R$ 5.000<br>Segundo Lugar: R$ 3.500<br>Terceiro Lugar: R$ 2.800</h3>
-        <button onclick="realizarInscri()">Realizar Inscrição</button>
+        <div class="form">
+            <h1>Bem-Vindo ao Festival Hasune</h1>
+            <div id="paragrafoInicial" class="bg">
+                <h2>É cosplayer e quer ter a oportunidade de subir no palco e competir em um evento muito procurado?
+                    <br>Meus
+                    parabéns agora você tem essa chance!
+                </h2>
+                <h2><br>Nós do Festival Hasune, somos uma equipe atenciosa que prezamos pelos artistas, qualidade e
+                    principalmente o
+                    respeito!</h2>
+            </div>
+            <div id="container-final" class="bg">
+                <h3>"E as premiações?" <br> RELAXA! NÓS TEMOS! (e das gordas) <br>Primeiro Lugar: R$ 5.000<br>Segundo
+                    Lugar: R$
+                    3.500<br>Terceiro Lugar: R$ 2.800</h3>
+            </div>
+            <div id="container-inscri">
+                <p>Realizar Inscrição</p>
+                <button class="layoutBotao" onclick="realizarInscri()"><img src="botao3.png" alt=""></button>
+            </div>
+        </div>
     </section>
-    
-    <section id="telaInscri" class="tela">
-        <h1>Inscrição Competição Hasena</h1>
-        <div id="form">
+
+    <section id="telaInscri" class="tela ">
+        <div class="form">
+            <h1>Inscrição Competição Hasune</h1>
             <div class="container-inputs">
                 <label for="">Nome do participante</label>
                 <input id="input-nome_part" type="text">
@@ -47,18 +74,25 @@
                 <label for="">Personagem Canon</label>
                 <input id="input-canon" type="checkbox">
             </div>
-            
-            <h1></h1>
-            <button onclick="finalizarInscri()">Finalizar Inscrição</button>
-            <button onclick="mostrarPart()">Lista de Participantes</button>
-            
+
+            <div id="botaoConfig">
+                <div class="container-button">
+                    <p>Finalizar Inscrição</p>
+                    <button class="layoutBotao" onclick="finalizarInscri()"><img src="botao1.png" alt=""></button>
+                </div>
+                <div class="container-button">
+                    <p>Todos os Participantes</p>
+                    <button class="layoutBotao" onclick="mostrarPart()"><img src="botao2.png" alt=""></button>
+                </div>
+            </div>
+
         </div>
-        
+
         <hr>
         <hr>
     </section>
-    
-    
+
+
     <section id="telaTotal" class="tela">
         <h1>Listas de Participantes Aceitos e Negados</h1>
         <button onclick="partTotais()">Mostrar Todos os Participantes</button>
@@ -73,4 +107,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

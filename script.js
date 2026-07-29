@@ -55,29 +55,30 @@ function limparFormulario() {
 //como separar os aceitos dos negados?
 
 function partTotais() {
-    document.getElementById('painel-participantes').innerHTML = ''
+    document.getElementById('painel-participantes-negados').innerHTML = ''
+    document.getElementById('painel-participantes-aceitos').innerHTML = ''
 
     for (let i = 0; i < participantes.length; i++) {
-        document.getElementById('painel-participantes').innerHTML +=
+        document.getElementById('painel-participantes-aceitos').innerHTML +=
             `<div class="card-part">
            <h2>${participantes[i].nome_part}</h2>
-           <p>Nome do personagem:<br> ${participantes[i].nome_perso}</p>
-           <p>Mídia:<br> ${participantes[i].midia}</p>
-           <p>Prop:<br> ${participantes[i].prop}</p>
-           <p>Modalidade desejada:<br> ${participantes[i].modalidade}</p>
-           <p>Canonico:<br> ${participantes[i].canon}</p>
+           <p>Nome do personagem: ${participantes[i].nome_perso}</p>
+           <p>Mídia: ${participantes[i].midia}</p>
+           <p>Prop: ${participantes[i].prop}</p>
+           <p>Modalidade desejada: ${participantes[i].modalidade}</p>
+           <p>Canonico: ${participantes[i].canon}</p>
         </div>
         `
     }
     for (let i = 0; i < participantesNegados.length; i++) {
-        document.getElementById('painel-participantes').innerHTML +=
+        document.getElementById('painel-participantes-negados').innerHTML +=
             `<div class="card-negado">
            <h2>${participantesNegados[i].nome_part}</h2>
-           <p>Nome do personagem:<br> ${participantesNegados[i].nome_perso}</p>
-           <p>Mídia:<br> ${participantesNegados[i].midia}</p>
-           <p>Prop:<br> ${participantesNegados[i].prop}</p>
-           <p>Modalidade desejada:<br> ${participantesNegados[i].modalidade}</p>
-           <p>Canonico:<br> ${participantesNegados[i].canon}</p>
+           <p>Nome do personagem: ${participantesNegados[i].nome_perso}</p>
+           <p>Mídia: ${participantesNegados[i].midia}</p>
+           <p>Prop: ${participantesNegados[i].prop}</p>
+           <p>Modalidade desejada: ${participantesNegados[i].modalidade}</p>
+           <p>Canonico: ${participantesNegados[i].canon}</p>
         </div>
         `
     }

@@ -51,6 +51,7 @@ header img {
 button:hover {
     scale: 1.05;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .layoutBotao {
@@ -112,8 +113,6 @@ button:hover {
 
 
 .container-button,
-.card-part,
-.card-negado,
 .bg,
 #telaInicial {
     display: flex;
@@ -136,9 +135,38 @@ button:hover {
     color: var(--texto);
 }
 
-.card-part,
+.card-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+    padding: 20px;
+    width: 180px;
+    min-height: 180px;
+
+    background-color: var(--card);
+    box-shadow: 0 0 12px #29f8e7;
+}
+
+.card-part p,
+.card-negado p{
+    align-self: flex-start;
+}
+
 .card-negado {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+    padding: 20px;
+    width: 180px;
+    min-height: 180px;
+
+    background-color: #831a13;
+    box-shadow: 0 0 15px #ff6464;
+
 }
 
 .bg {
@@ -149,20 +177,46 @@ button:hover {
     box-shadow: 0 0 12px #29f8e7;
 }
 
+#tituloLista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-#painel-participantes {
+#container-paineis{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
-    margin: 10px;
+    width: 100%;
+    padding: 20px;
+    gap: 500px;
 }
+
+#painel-participantes-aceitos,
+#painel-participantes-negados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container-acesso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+
 
 #container-final {
     margin-top: 40px;
     gap: 20px;
 }
-
 
 #telaInicial {
     text-align: center;

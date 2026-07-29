@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Cadastro Competição</title>
+    <title>Festival Hasune</title>
 </head>
 <body>
-    <h1>CRUD</h1>
-    <div id="form">
+
+    <section id="telaInicial" class="tela ativa">
+    <h1>Bem Vindo ao Festival Hasune</h1>
+    <h2>É cosplayer e quer ter a oportunidade de subir no palco e competir em um evento muito procurado? <br> Meus parabéns agora você tem essa chance!</h2>
+    <h2>Nós do Festival Hasune, somos uma equipe atenciosa que prezamos pelos artistas, qualidade e principalmente o respeito</h2>
+    <h3>"E as premiações?" <br> RELAXA! NÓS TEMOS! (e das gordas) <br>Primeiro Lugar: R$ 5.000<br>Segundo Lugar: R$ 3.500<br>Terceiro Lugar: R$ 2.800<br>Bônus Não-Canon: R$ 1.200</h3>
+    <button onclick="realizarInscri()">Realizar Inscrição</button>
+    </section>
+    
+    <section id="telaInscri" class="tela">
+        <h1>Inscrição Competição Hasena</h1>
+        <div id="form">
             <div class="container-inputs">
                 <label for="">Nome do participante</label>
                 <input id="input-nome_part" type="text">
@@ -33,18 +43,33 @@
                 <label for="">Personagem Canon</label>
                 <input id="input-canon" type="checkbox">
             </div>
-
-             <h1></h1>
-            <button onclick="cadastrarPart()">Realizar cadastro</button>
-    </div>
-
+            
+            <h1></h1>
+            <button onclick="cadastrarPart()">Finalizar Inscrição</button>
+        </div>
+        
         <hr>
         <hr>
         <button onclick="mostrarPart()">Mostrar Todos os Participantes</button>
         <hr><hr>
-
+        
         <div id="painel-participantes">
         </div>
+    </section>
+
+        
+    <section id="telaTotal" class="tela">
+        
+
+
+
+
+    </section>
+
+
+
+
+
 
 
     <script src="script.js"></script>

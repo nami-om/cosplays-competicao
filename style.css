@@ -1,3 +1,9 @@
+.tela {
+    display: none;
+}
+.ativa{
+    display: block;
+}
 .card-part{
 display: flex;
 flex-direction: column;

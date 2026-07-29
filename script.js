@@ -1,6 +1,24 @@
 let participantes = []
 let participantesNegados = []
 
+function mudarTela(){
+    const telas = document.querySelectorAll(".tela")
+    telas.forEach(function (tela) {
+        tela.classList.remove("ativa")
+    })
+}
+function realizarInscri(){
+    mudarTela()
+    document.getElementById("telaInscri").classList.add("ativa")
+}
+
+function mostrarPart(){
+    mudarTela()
+    document.getElementById("telaTotal").classList.add("ativa")
+}
+
+
+
 function cadastrarPart(){
     const novoPart = {
         id: Date.now(), //conta os milisegundos desde 1980 (vai ser necessário mais pra frente)
@@ -21,6 +39,11 @@ function cadastrarPart(){
 
     limparFormulario()
 }
+
+// function salvarDados(){
+//     participantes = JSON.parse
+// }
+
 
 function limparFormulario(){
     document.getElementById('input-nome_part').value = ''

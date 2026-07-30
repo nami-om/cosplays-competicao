@@ -57,6 +57,8 @@ button:hover {
 .layoutBotao {
     border: none;
     background: none;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .layoutBotao img {
@@ -123,6 +125,9 @@ button:hover {
 
 .container-button {
     color: var(--texto);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+
 }
 
 .container-button p,
@@ -135,6 +140,14 @@ button:hover {
     color: var(--texto);
 }
 
+
+.container-buttonN {
+    color: #da3939;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
 .card-part{
     display: flex;
     flex-direction: column;
@@ -144,9 +157,13 @@ button:hover {
     padding: 20px;
     width: 180px;
     min-height: 180px;
+    font-size: 14px;
 
     background-color: var(--card);
     box-shadow: 0 0 12px #29f8e7;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .card-part p,
@@ -163,9 +180,13 @@ button:hover {
     padding: 20px;
     width: 180px;
     min-height: 180px;
+    font-size: 14px;
+
 
     background-color: #831a13;
     box-shadow: 0 0 15px #ff6464;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -182,6 +203,9 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "Mochiy Pop One", sans-serif;
+    color: aliceblue;
+
 }
 
 #container-paineis{
@@ -208,10 +232,10 @@ button:hover {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
 
 }
-
-
 
 #container-final {
     margin-top: 40px;
